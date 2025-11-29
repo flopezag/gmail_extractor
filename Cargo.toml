@@ -1,14 +1,18 @@
 [package]
-name = "gmail_senders"
+name = "gmail_extractor"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 
 [dependencies]
-google-gmail1 = "6.0.0"
-tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+google-gmail1 = "5"
+tokio = { version = "1", features = ["full"] }
 futures = "0.3"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 regex = "1"
 csv = "1"
 anyhow = "1"
+yup-oauth2 = { version = "9", features = ["hyper-rustls"] }
+hyper = "0.14"
+hyper-rustls = "0.25"
+indicatif = "0.17"
