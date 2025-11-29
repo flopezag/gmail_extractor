@@ -1,0 +1,14 @@
+[package]
+name = "gmail_senders"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+google-gmail1 = "6.0.0"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+futures = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+regex = "1"
+csv = "1"
+anyhow = "1"
